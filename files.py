@@ -18,7 +18,7 @@ class Files:
 
         mongo_ip = "mongodb://localhost:27017"
         self.log("Connecting to database '{0}'\n(If it seems like the server is stuck or the server randomly crashes, it probably means it couldn't connect to the database)".format(mongo_ip))
-        self.db = MongoClient(mongo_ip)["meowerserver"]
+        self.db = MongoClient(mongo_ip)["streamilatortalkserver"]
 
         # Check connection status
         if self.db.client.get_database("meowerserver") == None:
