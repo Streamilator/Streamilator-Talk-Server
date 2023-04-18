@@ -64,7 +64,7 @@ class Main:
         self.cl.loadIPBlocklist(ips)
         
         # Set server MOTD
-        self.cl.setMOTD("Meower Social Media Platform Server", True)
+        self.cl.setMOTD("Streamilator Talk Social Media Platform", True)
         
         # Run REST API
         Thread(target=rest_api_app.run, kwargs={"host": "0.0.0.0", "port": 3001, "debug": False, "use_reloader": False}).start()
