@@ -8,7 +8,7 @@ from threading import Thread
 
 """
 
-Meower Social Media Platform - Server Source Code
+Streamilator Talk Social Media Platform - Server Source Code
 
 Dependencies:
 * CloudLink >=0.1.7.6
