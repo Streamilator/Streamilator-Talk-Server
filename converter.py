@@ -21,7 +21,7 @@ for char in string.digits:
 permitted_chars_username.extend(["_", "-"])
 
 # Connect to DB
-db = pymongo.MongoClient("mongodb://localhost:27017")["streamilatortalkserver"]
+db = pymongo.MongoClient("mongodb://localhost:27017")["meowerserver"]
 print("Connected to database!")
 
 # Fix up my dumb spelling mistake
