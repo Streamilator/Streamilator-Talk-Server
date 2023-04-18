@@ -1,10 +1,10 @@
-# Meower-Server
-Official source code of the Meower server, written in Python. Powered by CloudLink. 
+# Streamilator-Talk-Server
+Official source code of the Streamilator Talk server, written in Python. Powered by CloudLink. 
 
 ## NOTICE
 This is the APIv0 Branch of Code! This API code will only be maintained up until when New Meower is released.
 
-APIv0 will be upgraded automatically to APIv1 when Beta 6 is released. The API can be found at https://api.meower.org/
+APIv0 will be upgraded automatically to APIv1 when Beta 6 is released. The API can be found at https://api.streamilator.tk/
 
 ## Installing Dependencies
 * Run `pip3 install -r requirements.txt` in the downloaded and unzipped directory
@@ -12,7 +12,7 @@ APIv0 will be upgraded automatically to APIv1 when Beta 6 is released. The API c
 ## Running the server
 
 ```py
-git clone https://github.com/meower-media-co/Meower-Server.git
+git clone https://github.com/Streamilator/Streamilator-Talk-Server.git
 git submodule init
 git submodule update
 python3 main.py
