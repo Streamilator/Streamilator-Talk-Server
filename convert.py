@@ -3,7 +3,7 @@ import os
 import json
 from supporter import Supporter
 
-db = MongoClient("mongodb://localhost:27017")["meowerserver"]
+db = MongoClient("mongodb://localhost:27017")["streamilatortalkserver"]
 supporter = Supporter()
 
 username_changes = {} # {"<username>": "<new username>"}
