@@ -65,7 +65,7 @@ def pre_request_check_auth():
 @app.route('/', methods = ['GET']) # Index
 def index():
 	if request.method == "GET":
-		return "Hello world! The Meower API is working, but it's under construction. Please come back later.", 200
+		return "Hello world! The Streamilator Talk API is working, but it's under construction. Please come back later.", 200
 
 @app.route('/ip', methods = ['GET']) # Get the Cloudflare IP address
 def ip_tracer():
