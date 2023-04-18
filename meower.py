@@ -24,7 +24,7 @@ class Meower:
         if not result:
             self.log("Failed to load status, server will enable repair mode!")
             self.supporter.status = {"repair_mode": True, "is_deprecated": False}
-        self.log("Meower initialized!")
+        self.log("Streamilator Talk initialized!")
     
     # Some Meower-library specific utilities needed
     
@@ -148,10 +148,10 @@ class Meower:
             if FileRead:
                 if status == True:
                     for user in FileData["reports"]:
-                        self.createPost("inbox", user, "We took action on one of your recent reports. Thank you for your help with keeping Meower a safe and welcoming place!")
+                        self.createPost("inbox", user, "We took action on one of your recent reports. Thank you for your help with keeping Streamilator Talk a safe and welcoming place!")
                 elif status == False:
                     for user in FileData["reports"]:
-                        self.createPost("inbox", user, "Sadly, we could not take action on one of your recent reports. The content you reported was not severe enough to warrant action being taken. We still want to thank you for your help with keeping Meower a safe and welcoming place!")
+                        self.createPost("inbox", user, "Sadly, we could not take action on one of your recent reports. The content you reported was not severe enough to warrant action being taken. We still want to thank you for your help with keeping Streamilator Talk a safe and welcoming place!")
                 self.filesystem.delete_item("reports", _id)
 
     def returnCode(self, client, code, listener_detected, listener_id):
@@ -343,7 +343,7 @@ class Meower:
                                             self.supporter.log_peak_users()
 
                                             # Send welcome message
-                                            self.createPost(post_origin="inbox", user=username, content="Welcome to Meower! We welcome you with open arms! You can get started by making friends in the global chat or home, or by searching for people and adding them to a group chat. We hope you have fun!")
+                                            self.createPost(post_origin="inbox", user=username, content="Welcome to Streamilator! We welcome you with open arms! You can get started by making friends in the global chat or home, or by searching for people and adding them to a group chat. We hope you have fun!")
                                         else:
                                             self.returnCode(client = client, code = "InternalServerError", listener_detected = listener_detected, listener_id = listener_id)
                                     else:
@@ -717,7 +717,7 @@ class Meower:
                         # Give report feedback
                         self.completeReport(val, True)
                         # Send alert to user
-                        self.createPost(post_origin="inbox", user=str(val), content="All your home posts have been deleted by a moderator. If you think this is a mistake, please contact the Meower moderation team.")
+                        self.createPost(post_origin="inbox", user=str(val), content="All your home posts have been deleted by a moderator. If you think this is a mistake, please contact the Streamilator Talk moderation team.")
                         # Return to the client it's data
                         self.sendPacket({"cmd": "direct", "val": "", "id": client}, listener_detected = listener_detected, listener_id = listener_id)
                         self.returnCode(client = client, code = "OK", listener_detected = listener_detected, listener_id = listener_id)
