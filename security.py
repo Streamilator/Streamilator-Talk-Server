@@ -83,14 +83,6 @@ class Security:
                 
                 if omitSensitive: # Purge sensitive data and remove user settings
                     for sensitive in [
-                        "unread_inbox",
-                        "theme",
-                        "mode",
-                        "sfx",
-                        "debug",
-                        "bgm",
-                        "bgm_song",
-                        "layout",
                         "email",
                         "pswd",
                         "tokens",
